@@ -18,7 +18,7 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 4. Members may book personal training sessions with trainers.
 5. Attendance recorded for each session.
 6. Payments tracked for memberships and sessions.
-
+ 
 ## ER DIAGRAM:
 
 
