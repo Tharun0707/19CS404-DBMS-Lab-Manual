@@ -1,72 +1,40 @@
-# Experiment 1: Entity-Relationship (ER) Diagram
+### ER Diagram Workshop – Submission Template
 
-## 🎯 Objective:
-To understand and apply the concepts of ER modeling by creating an ER diagram for a real-world application.
+## Objective
+To understand and apply ER modeling concepts by creating ER diagrams for real-world applications.
 
-## 📚 Purpose:
-The purpose of this workshop is to gain hands-on experience in designing ER diagrams that visually represent the structure of a database including entities, relationships, attributes, and constraints.
+## Purpose
+Gain hands-on experience in designing ER diagrams that represent database structure including entities, relationships, attributes, and constraints.
 
----
+### Scenario A: City Fitness Club Management
 
-## 🧪 Choose One Scenario:
+## Business Context:
+FlexiFit Gym wants a database to manage its members, trainers, and fitness programs.
 
-### 🔹 Scenario 1: University Database
-Design a database to manage students, instructors, programs, courses, and student enrollments. Include prerequisites for courses.
+## Requirements:
+1. Members register with name, membership type, and start date.
+2. Each member can join multiple programs (Yoga, Zumba, Weight Training).
+3. Trainers assigned to programs; a program may have multiple trainers.
+4. Members may book personal training sessions with trainers.
+5. Attendance recorded for each session.
+6. Payments tracked for memberships and sessions.
 
-**User Requirements:**
-- Academic programs grouped under departments.
-- Students have admission number, name, DOB, contact info.
-- Instructors with staff number, contact info, etc.
-- Courses have number, name, credits.
-- Track course enrollments by students and enrollment date.
-- Add support for prerequisites (some courses require others).
+## ER DIAGRAM:
 
----
 
-### 🔹 Scenario 2: Hospital Database
-Design a database for patient management, appointments, medical records, and billing.
+<img width="1240" height="1755" alt="image" src="https://github.com/user-attachments/assets/0e81a62b-706d-40e6-8339-6a622c7e31c5" />
 
-**User Requirements:**
-- Patient details including contact and insurance.
-- Doctors and their departments, contact info, specialization.
-- Appointments with reason, time, patient-doctor link.
-- Medical records with treatments, diagnosis, test results.
-- Billing and payment details for each appointment.
 
----
+## Entities and Attributes
 
-## 📝 Tasks:
-1. Identify entities, relationships, and attributes.
-2. Draw the ER diagram using any tool (draw.io, dbdiagram.io, hand-drawn and scanned).
-3. Include:
-   - Cardinality & participation constraints
-   - Prerequisites for University OR Billing for Hospital
-4. Explain:
-   - Why you chose the entities and relationships.
-   - How you modeled prerequisites or billing.
+<img width="730" height="265" alt="image" src="https://github.com/user-attachments/assets/d6cd1554-e278-4eb1-9396-0f0dca5bdc71" />
 
-# ER Diagram Submission - Student Name
+## Relationships and Constraints
 
-## Scenario Chosen:
-University / Hospital (choose one)
+<img width="715" height="265" alt="image" src="https://github.com/user-attachments/assets/84219de1-0fce-4db0-a328-b1742c8ec8f1" />
 
-## ER Diagram:
-![ER Diagram](er_diagram.png)
+## Assumptions
 
-## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
-...
-
-## Relationships and Constraints:
-- Relationship1 (Cardinality, Participation)
-- Relationship2 (Cardinality, Participation)
-...
-
-## Extension (Prerequisite / Billing):
-- Explain how you modeled prerequisites or billing.
-
-## Design Choices:
-Brief explanation of why you chose certain entities, relationships, and assumptions
-
-## RESULT
+1. A member must belong to at least one program.
+2. A trainer may be associated with multiple programs.
+3. Payments can be for memberships or personal sessions.
